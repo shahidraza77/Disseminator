@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Configuration>
+
+  <Appenders>
+     <File name="File" filename="loginfo.log">
+       <PatternLayout pattern="%d{yyyy-MM-dd}-%t-%x-%-5p-%-10c:%m%n"  />
+     </File>
+  </Appenders>
+  <Loggers>
+     <Root level="info">
+       <AppenderRef ref="File"></AppenderRef>
+     </Root>
+  </Loggers>
+</Configuration>
